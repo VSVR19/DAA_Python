@@ -33,6 +33,7 @@ class ContinuousSum:
 print("HHM!")
 print("May15")
 print("In Branch!")
+print("Am getting it!")
 
 
 objectContinuousSum = ContinuousSum
