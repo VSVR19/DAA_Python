@@ -30,10 +30,19 @@ class ContinuousSum:
         return continuous_sum
 
 
+<<<<<<< HEAD
 print("A redundant print for May 15 branch.")
 print("Oops!")
 print("Lets see")
 print("Lets see again!")
+=======
+print("HHM!")
+print("May15")
+print("In Branch!")
+print("Am getting it!")
+print("HHM! I got it!!")
+print("Final attempt")
+>>>>>>> ea68e582e8364cd921980673950a484b05f8d72b
 
 objectContinuousSum = ContinuousSum
 print(objectContinuousSum.find_continuous_sum([1, 2, -1,3, 4, -1]))  # Output 9.
