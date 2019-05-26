@@ -30,10 +30,6 @@ class ContinuousSum:
         return continuous_sum
 
 
-print("A redundant print for May 15 branch.")
-print("Oops!")
-print("Lets see")
-print("Lets see again!")
 
 objectContinuousSum = ContinuousSum
 print(objectContinuousSum.find_continuous_sum([1, 2, -1,3, 4, -1]))  # Output 9.
