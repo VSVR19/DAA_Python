@@ -1,30 +1,44 @@
+# This class implements a Singly Doubly List.
 class Node:
 
+    # This constructor assigns values to nodes and
+    # temporarily makes the nextnode and previousnode as 'None'.
     def __init__(self, value):
         self.value = value
-        self.previous_node = None
-        self.next_node = None
+        self.nextnode = None
+        self.previousnode = None
 
+# Setting up nodes and their values.
+a = Node(1)
+b = Node(2)
+c = Node(3)
+d = Node(4)
+e = Node(5)
 
-a = Node("DEN")
-b = Node("CLT")
-c = Node("PHL")
-d = Node("LGA")
+# Linking nodes to set up a doubly linked list.
+a.nextnode = b
 
-print(a.value)
-a.next_node = b
-print(a.next_node.value)
+b.nextnode = c
+b.previousnode = a
 
-print(b.value)
-b.previous_node = a
-b.next_node = c
-print(b.previous_node.value)
-print(b.next_node.value)
+c.nextnode = d
+c.previousnode = b
 
-d.next_node = a
-print(d.next_node.value)
+d.nextnode = e
+d.previousnode = c
 
+e.previousnode = d
 
+# Printing the nextnode and previousnode of each node in the singly linked list.
+print(a.nextnode.value)  # 2
 
+print(b.nextnode.value)  # 3
+print(b.previousnode.value)  # 1
 
+print(c.nextnode.value)  # 4
+print(c.previousnode.value)  # 2
 
+print(d.nextnode.value)  # 5
+print(d.previousnode.value) # 3
+
+print(e.previousnode.value)  # 4
