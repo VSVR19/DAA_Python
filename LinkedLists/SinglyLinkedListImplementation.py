@@ -24,4 +24,4 @@ print(a.nextnode.value)  # 2
 print(b.nextnode.value)  # 3
 print(c.nextnode.value)  # 4
 print(d.nextnode.value)  # 5
-# print(e.nextnode.value)  # Error- 'NoneType' object has no attribute 'value'.
+# print(e.nextnode.value)  # Error- 'NoneType' object has no attribute 'value'..
